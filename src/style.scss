@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: rgb(250, 200, 64);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .app-box {
+    background: white;  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.055);
+    width: 400px;
+
+    form {
+      padding-top: 10px;
+      
+      h4 {
+        margin-bottom: 5px;
+      }
+
+      input {
+        padding: 5px 10px;
+        outline: none;
+        border: none;
+        background: #ececec8c;
+        border-radius: 5px;
+      }
+
+      button {
+        border: none;
+        border-radius: 5px;
+        margin-left: 10px;
+        padding: 5px 10px;
+        background: rgba(250, 200, 64, 0.884);
+        transition: .2s;
+        &:hover {
+          transform: scale(1.09, 1.09);
+        }
+      }
+    }
+
+    .todo-list {
+      h4 {
+        margin-top: 15px;
+      }
+
+      .todo-item {
+        margin-top: 8px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.055);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+  
+        div {
+          display: flex;
+          align-items: center;
+          width:80%;
+  
+          input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+          }
+  
+          input[type="text"]{
+            width: 100%;
+            margin-left: 10px;
+            border: none;
+            outline: none;
+            background: none;
+          }
+        }
+  
+        button {
+          border: none;
+          background: #f38989;
+          padding: 3px 8px;
+          border-radius: 5px;
+          transition: .2s;
+          &:hover {
+            transform: scale(1.09, 1.09);
+          }
+        }
+      }
+    }
+  }
+}
+
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+} 
+
+h4 {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.done {
+  background: #adadad !important;
+  
+  button {
+    background: #b16262 !important;
+  }
+}
